@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Lista de Tareas</h1>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Nueva tarea"
+          id="todoInput"
+        />
+        <button class="btn btn-primary" id="addBtn">Agregar Tarea</button>
+      </div>
+
+      <ul class="list-group" id="todoList"></ul>
+
+      <div class="mt-4">
+        <span class="me-3"
+          ><strong>Total:</strong> <label id="total">0</label></span
+        >
+        <span class="me-3"
+          ><strong>Realizadas:</strong> <label id="completed">0</label></span
+        >
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <script src="./assest/js/index.js"></script>
+  </body>
+</html>
